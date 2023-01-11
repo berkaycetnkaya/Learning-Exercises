@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Button1Component } from './components/denemeler/serviceUsing/button1/button1.component';
+import { Button2Component } from './components/denemeler/serviceUsing/button2/button2.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:"button1",component:Button1Component},
+  {path:"button2",component:Button2Component}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
