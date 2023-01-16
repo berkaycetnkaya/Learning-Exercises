@@ -13,7 +13,7 @@ export class MaincoComponent {
 
   animal: string;
   name: string;
-ani:string;
+
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
@@ -25,7 +25,7 @@ ani:string;
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-
+this.animal=result
       console.log(result+"bu ani")
 
 

@@ -21,6 +21,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { Bootstrap1Component } from './popupBootstrap/bootstrap1/bootstrap1.component';
+import { HomePopComponent } from './popupBootstrap/home-pop/home-pop.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     DenemparentComponent,
     PopupComponent,
     MaincoComponent,
+    Bootstrap1Component,
+    HomePopComponent,
 
   ],
   imports: [
