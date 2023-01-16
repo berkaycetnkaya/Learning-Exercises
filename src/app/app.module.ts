@@ -12,6 +12,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OutputComponent } from './components/Output/output/output.component';
 import { DenemparentComponent } from './components/Output/denemparent/denemparent.component';
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import { PopupComponent } from './components/Popups/popup/popup.component';
+import { MaincoComponent } from './components/Popups/mainco/mainco.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,12 +30,31 @@ import { DenemparentComponent } from './components/Output/denemparent/denemparen
     Button1Component,
     Button2Component,
     OutputComponent,
-    DenemparentComponent
+    DenemparentComponent,
+    PopupComponent,
+    MaincoComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatButtonToggleModule,
+    MatButtonModule,
+    FormsModule
+  ],
+  exports:[
+    MatDialogModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatButtonToggleModule,
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
