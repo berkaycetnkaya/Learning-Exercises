@@ -1,6 +1,16 @@
 <p>parent works!</p>
 
 
-<app-child [data]="123">  
-    
+<app-child [data]=1>
+
 </app-child>
+
+<h4>**************</h4>
+
+<button (click)="child.setData(2)"> pass data to child</button>
+
+<app-child #child></app-child>
+
+
+
+<br><button mat-button #dec>Action</button>
